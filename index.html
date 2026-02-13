@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript Assignment 3</title>
+</head>
+<body>
+
+    <h1>JavaScript Assignment 3</h1>
+    <p>Press F12 to open console to see the result</p>
+</body>
+<head>
+    <script>
+        // Coding Task 1
+        let countries = ["Canada", "India", "Australia", "Germany", "Japan", "Brazil"];
+
+        countries.forEach(function(country) {
+            console.log(country);
+        });
+
+        // Coding Task 2
+        function calculateNumberToothbrushForLife(age, amountPerMonth) {
+            let maxAge = 98;
+            let total = (maxAge - age) * 12 * amountPerMonth;
+
+            console.log("You will need " + total +" toothbrushes to last you until the age of " + maxAge );
+        }
+
+        calculateNumberToothbrushForLife(18, 1);
+        calculateNumberToothbrushForLife(30, 2);
+    </script>
+</head>
+</html>
